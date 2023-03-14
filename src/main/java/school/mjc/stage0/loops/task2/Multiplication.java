@@ -2,5 +2,22 @@ package school.mjc.stage0.loops.task2;
 
 public class Multiplication {
     public void printMultiplied(int multiplyByAndToInclusive) {
+        if (multiplyByAndToInclusive > 0){
+            int a = 0;
+            while (a <= multiplyByAndToInclusive){
+                int b = a * multiplyByAndToInclusive;
+                System.out.println(b);
+                a ++;
+            }
+        } else if (multiplyByAndToInclusive < 0) {
+            int a = 0;
+            while (a >= multiplyByAndToInclusive){
+                int b = a * (- multiplyByAndToInclusive);
+                System.out.println(b);
+                a --;
+            }
+        }else if (multiplyByAndToInclusive == 0){
+            System.out.print("");
+        }
     }
 }
